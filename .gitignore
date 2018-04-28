@@ -1,0 +1,7 @@
+*.swp
+*.swo
+img
+node_modules
+config.json
+client_secret.json
+credentials.json
