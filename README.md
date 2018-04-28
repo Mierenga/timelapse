@@ -7,7 +7,7 @@ A raspberry pi camera timelapse uploader
 
 - add your Google Drive upload folder to `config.json`
 
-- e.g. for https://drive.google.com/drive/folders/3kg0s0d0kskso00fg00JLD00LD00D0OD0
+e.g. for `https://drive.google.com/drive/folders/3kg0s0d0kskso00fg00JLD00LD00D0OD0`
 ```
 {"base_folder_id": "3kg0s0d0kskso00fg00JLD00LD00D0OD0"} 
 ```
