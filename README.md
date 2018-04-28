@@ -5,13 +5,13 @@ A raspberry pi camera timelapse uploader
 
 ## configure uploads
 
-- add you Google Drive upload folder to `config.json`
+- add your Google Drive upload folder to `config.json`
 
 ```
 {"base_folder_id": "3kg0s0d0kskso00fg00JLD00LD00D0OD0"} 
 ```
 
-- add you credentials to `credentials.json`
+- add your credentials to `credentials.json`
 ```
 {
 	"installed": {
