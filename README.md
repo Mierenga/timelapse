@@ -10,6 +10,7 @@ A raspberry pi camera timelapse uploader
 ```
 {"base_folder_id": "3kg0s0d0kskso00fg00JLD00LD00D0OD0"} 
 ```
+for folder https://drive.google.com/drive/folders/3kg0s0d0kskso00fg00JLD00LD00D0OD0
 
 - add your credentials to `credentials.json`
 ```
@@ -21,6 +22,7 @@ A raspberry pi camera timelapse uploader
 	}
 }
 ```
+[G Suite API Credentials](https://developers.google.com/google-apps/activity/v1/quickstart/nodejs#step_1_turn_on_the_api_name)
 
 ## install in crontab
 
