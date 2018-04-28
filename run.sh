@@ -23,8 +23,7 @@ cd $PERSIST
 # take the picture
 raspistill -n -o $LAST_IMG_PATH >> $LOG
 
-# check the size
-
+# check the size (if it is too small (too dark), discard)
 minimumsize=2000000
 actualsize=$(wc -c <"$LAST_IMG_PATH")
 if [ $actualsize -le $minimumsize ]; then
@@ -37,7 +36,7 @@ fi
 cp $LAST_IMG_PATH $UNIQUE_RAM_PATH >> $LOG
 
 # upload it to google drive
-echo $UNIQUE_IMG_NAME >> $LOG
+echo -n $UNIQUE_IMG_NAME : >> $LOG
 $NODEJS $UPLOADER $UNIQUE_RAM_PATH $UNIQUE_IMG_NAME >> $LOG
 
 if [ "$?" -eq "0" ]; then
@@ -47,6 +46,4 @@ else
     # save it to SD card if upload failed
     mv $UNIQUE_RAM_PATH $PERSIST_IMG_PATH >> $LOG
 fi
-
-
 

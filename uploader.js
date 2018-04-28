@@ -146,7 +146,7 @@ function uploadFile(drive) {
         console.log(err);
 	process.exit(404);
       } else {
-        console.log('File Id: ', file.data.id);
+        console.log(' uploaded ' + file.data.id);
 	process.exit(0);
       }
     });
@@ -177,14 +177,14 @@ async function findFolderIdByName(drive, parents, name) {
 	  if (err) {
 		console.log('error');
 		  console.error(err);
-		  process.exit(0);
+		  process.exit(1);
 	} else {
 		console.log('no error');
 		res.files.forEach((file) => {
 			console.log('Found file: ', file.name, file.id);
 		});
 		console.log('exiting.');
-		process.exit(0);
+		process.exit(1);
 	}
   });
 
